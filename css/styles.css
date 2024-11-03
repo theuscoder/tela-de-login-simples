@@ -1,1 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
 
+body {
+    background: url('../img/banner.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/* box do login */
+
+#login {
+    border-radius: 10px;
+    user-select: none;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.9);
+    background: #111;
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+    opacity: 0.9;
+    
+}
+
+/* titulo do login  */
+
+#title-login {
+    width: 82px;
+}
+
+#title-login h3 {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 19px;
+    border-bottom: 2px solid white;
+    border-radius: 1px;
+}
+
+/* nome do seu site */
+
+#title-site {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+    display: flex;
+    gap: 5px;
+}
+
+#title-site i {
+    text-shadow: 0 0 4px rgb(7, 187, 241, 0.9);
+    padding: 1px 0;
+    font-size: 20px;
+}
+
+#title-site h2 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+/* formulario */
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+    width: 400px;
+}
+
+#form-login input {
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 30px;
+    height: 30px;
+    width: 250px;
+    padding-left: 22px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+#form-login input:hover {
+    width: 265px;
+    border-bottom: 2px solid white;
+}
+
+#pass input:hover {
+    width: 250px;
+}
+
+#form-login input::placeholder {
+    transition: all 0.3s ease;
+}
+
+#form-login input:hover::placeholder {
+    color: white;
+}
+
+#form-login i {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+#pass input {
+    padding-right: 38px;
+}
+
+#pass .fa-lock {
+    display: absolute;
+    margin-top: 20px;
+}
+
+#pass .fa-eye, #pass .fa-eye-slash {
+    position: relative;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    right: 65px;
+    padding: 6px 0;
+    bottom: 1px;
+    transition: all 0.3s ease;
+}
+
+#pass .fa-eye:hover, #pass .fa-eye-slash:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+#form-login p {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+#form-login p a {
+    color: white;
+    border-bottom: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+#form-login p a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid white;
+}
+
+#form-login #link-cad {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+    width: 77px;
+    transition: all 0.4s ease;
+}
+
+#link-cad:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid white;
+}
+
+
+/* botão entrar */
+
+#btn-entrar {
+    justify-content: center;
+    margin: 0 30px;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    background: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#btn-entrar:hover {
+    color: black;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* copyright */
+
+#copyright {
+    text-shadow: 0 0 2px rgb(7, 187, 241, 0.9);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* responsividade */
+
+/* mobile */
+
+@media (max-width: 658px) {
+
+    body {
+        background-size: 450px 1000px;
+        background-color: #222;
+    }
+
+    #login {
+        margin-top: 25%;
+        width: 400px;
+        overflow: hidden
+    }
+
+}
